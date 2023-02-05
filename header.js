@@ -76,3 +76,32 @@ liMasNoVisible.addEventListener("click",()=>{
         iconFlechaAbajoNoVisible2.style.animation = "rotarIcono2 0.5s forwards";
     } 
 })
+
+let xIni, yIni, xMv, yMv;
+
+addEventListener("touchstart",(e)=>{
+      xIni = e.targetTouches[0].pageX;
+      yIni = e.targetTouches[0].pageY;
+})
+
+addEventListener("touchmove",(e)=>{
+    if (e.targetTouches[0].pageX >= xIni+50) {
+        xMv = "der";
+    } else if (e.targetTouches[0].pageX <= xIni-50) {
+        xMv = "izq";
+    }            
+})
+
+addEventListener("touchend",(e)=>{
+    if (xMv == "izq" & navNoVisible.style.display == "block") {
+        navNoVisible.style.animation = "cerrarNav 0.8s forwards";
+        setTimeout(()=>navNoVisible.style.display = "none", 800);
+        iconList.style.animation = "abrirNav 0.4s forwards";
+        xMv = null;
+    } else if (xIni <= 35 & xMv === "der" & navNoVisible.style.display == "none") {
+        navNoVisible.style.display = "block";
+        navNoVisible.style.animation = "abrirNav 0.8s forwards";
+        iconList.style.animation = "cerrarNav 0.4s forwards";
+        xMv = null;
+    }        
+}) 
