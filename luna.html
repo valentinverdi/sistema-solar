@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna - Sistema Solar</title>
+    <link rel="icon" href="imgs/logo.png" type="png">
+    <script src="https://kit.fontawesome.com/84d289294d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="luna.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__navvisible">
+            <ul class="header__navvisible-ul">
+                <li class="header__navvisible-ul-li"><a class="header__navvisible-ul-li-a" href="index.html"><img class="header__navvisible-ul-li-a-img" src="imgs/logo.png" alt=""></a></li>
+                <li class="header__navvisible-ul-li"><a class="header__navvisible-ul-li-a" href="index.html">INICIO</a></li>
+                <li class="header__navvisible-ul-li"><a class="header__navvisible-ul-li-a" href="origenes.html">ORIGENES</a></li>
+                <li class="header__navvisible-ul-li"><a class="header__navvisible-ul-li-a" href="sol.html">SOL</a></li>
+                <li class="header__navvisible-ul-li header__navvisible-ul-li-planetas">PLANETAS<i class="fa-solid fa-chevron-down icon-flecha-abajo-visible-1"></i>
+                    <div class ="header__navvisible-ul-li-ul-container header__navvisible-ul-li-ul-container-1">  
+                        <ul class="header__navvisible-ul-li-ul header__navvisible-ul-li-ul-1">
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="mercurio.html">MERCURIO</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="venus.html">VENUS</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="tierra.html">TIERRA</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="marte.html">MARTE</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="jupiter.html">JUPITER</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="saturno.html">SATURNO</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="urano.html">URANO</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="neptuno.html">NEPTUNO</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="planetasenanos.html">PLANETAS ENANOS</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li class="header__navvisible-ul-li header__navvisible-ul-li-mas">MAS<i class="fa-solid fa-chevron-down icon-flecha-abajo-visible-2"></i>
+                    <div class="header__navvisible-ul-li-ul-container header__navvisible-ul-li-ul-container-2">
+                        <ul class="header__navvisible-ul-li-ul header__navvisible-ul-li-ul-2">
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="luna.html">LUNA</a></li>
+                            <li class="header__navvisible-ul-li-ul-li"><a class="header__navvisible-ul-li-ul-li-a" href="cometasyasteroides.html">COMETAS Y ASTEROIDES</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <a href="index.html"><img src="imgs/logo.png" alt="" class="header__img-logo"></a>
+        <i class="fa-solid fa-list icon icon-list"></i>
+        <nav class="header__navnovisible">
+            <i class="fa-solid fa-arrow-left icon icon-flecha-izquierda-navnovisible"></i>
+            <ul class="header__navnovisible-ul">
+                <li class="header__navnovisible-ul-li"><a class="header__navnovisible-ul-li-a" href="index.html">INICIO</a></li>
+                <hr>
+                <li class="header__navnovisible-ul-li"><a class="header__navnovisible-ul-li-a" href="origenes.html">ORIGENES</a></li>
+                <hr>
+                <li class="header__navnovisible-ul-li"><a class="header__navnovisible-ul-li-a" href="sol.html">SOL</a></li>
+                <hr>
+                <li class="header__navnovisible-ul-li header__navnovisible-ul-li-planetas">PLANETAS<i class="fa-solid fa-chevron-down icon-flecha-abajo-novisible-1"></i>
+                    <div class ="header__navnovisible-ul-li-ul-container header__navnovisible-ul-li-ul-container-1">  
+                        <ul class="header__navnovisible-ul-li-ul header__navnovisible-ul-li-ul-1">
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="mercurio.html">MERCURIO</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="venus.html">VENUS</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="tierra.html">TIERRA</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="marte.html">MARTE</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="jupiter.html">JUPITER</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="saturno.html">SATURNO</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="urano.html">URANO</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="neptuno.html">NEPTUNO</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="planetasenanos.html">PLANETAS ENANOS</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <hr>
+                <li class="header__navnovisible-ul-li header__navnovisible-ul-li-mas">MAS<i class="fa-solid fa-chevron-down icon-flecha-abajo-novisible-2"></i>
+                    <div class="header__navnovisible-ul-li-ul-container header__navnovisible-ul-li-ul-container-2">
+                        <ul class="header__navnovisible-ul-li-ul header__navnovisible-ul-li-ul-2">
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="luna.html">LUNA</a></li>
+                            <hr>
+                            <li class="header__navnovisible-ul-li-ul-li"><a class="header__navnovisible-ul-li-ul-li-a" href="cometasyasteroides.html">COMETAS Y ASTEROIDES</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section1">
+            <h1 class="section1__h1">LUNA</h1>
+        </section>
+
+        <section class="section2">
+            <div class="section2__container">   
+                <img src="imgs/lunaimgs/imgsection2.png" alt="" class="section2__container-img"> 
+                <p>La Luna es el satélite natural de la <a href="tierra.html">Tierra</a> y es el objeto celeste más grande en relación a su planeta anfitrión. Con un diámetro de aproximadamente 3.476 kilómetros, la Luna es una de las mayores lunas en el sistema solar en términos de tamaño relativo a su planeta. La Luna es conocida por su apariencia gris y brillante en el cielo nocturno, lo que se debe a su superficie rocosa y llena de cráteres y montañas. No tiene una atmósfera significativa, lo que permite que la luz solar llegue a la superficie sin ser dispersada y reflejada hacia la Tierra.</p>
+                <p>La Luna es el quinto satélite más grande en el sistema solar. La aceleración gravitatoria allí es de 1,62 m/s², mientras que en la <a href="tierra.html">Tierra</a> es de 9,8 metros por segundo al cuadrado. Esto significa que un objeto en la Luna pesará aproximadamente un sexto de su peso en la <a href="tierra.html">Tierra</a>. Gira alrededor de nuestro planeta en una órbita elíptica y tarda unos 27,3 días terrestres en completar una vuelta completa y a diferencia de la <a href="tierra.html">Tierra</a>, la Luna tiene una rotación sincrónica, lo que significa que una misma cara siempre está apuntando hacia nosotros, ya que una rotación sobre su eje le lleva el mismo tiempo que una órbita completa.</p>
+                <h4>Composicion interna:</h4>
+                <p>Se cree que el núcleo de la Luna es pequeño y probablemente esté compuesto de hierro y níquel. El manto de la Luna, que se encuentra debajo de su superficie, es grueso y está compuesto principalmente de silicatos y oxígeno. Se estima que la corteza es bastante delgada, aproximadamente de 50 a 100 kilómetros de espesor. La corteza es más rica en elementos ligeros que el manto y contiene minerales como el anfíboles, la plagioclasa y la piroxena.</p>
+                <h4>Atmósfera lunar</h4>
+                <p>La atmósfera lunar se compone principalmente de helio y argón, y también contiene pequeñas cantidades de otros gases, incluyendo neón, kriptón y xenon. La atmósfera allí es mucho más débil que la de la <a href="tierra.html">Tierra</a> y no tiene la suficiente presión para retener gases en su superficie. En cuanto al campo magnético de la Luna, es mucho más débil que el de la <a href="tierra.html">Tierra</a>. En la actualidad, se estima que el campo magnético lunar es unas 100 veces más débil que el terrestre.</p>
+                <p>La falta de un campo magnético fuerte en la Luna significa que está expuesta a una cantidad significativa de radiación cósmica y partículas cargadas que vienen del <a href="sol.html">Sol</a>.</p>
+                <img src="imgs/lunaimgs/imgsection2.png" alt="" class="section2__container-img2">
+            </div>
+        </section>
+
+        <hr style="width: 90%;">
+
+        <section class="section3">
+            <h2 class="section3__h2">Misiones lunares mas importantes y emblemáticas</h2>
+            <div class="section3__container section3__containervisible section3__containervisible1">
+                <h3 class="section3__containervisible-h3">Apolo 11</h3>
+            </div>
+            <i class="fa-solid fa-chevron-right section3__icon section3__icon-flechaderecha1"></i>
+            <div class="section3__container section3__containernovisible section3__containernovisible1">
+                <p class="section3__containernovisible-p">La Misión Apolo 11 fue la primera misión tripulada en enviar seres humanos a la superficie de la Luna. La nave Apolo 11 fue lanzada al espacio en 1969 y alcanzó la Luna alrededor de cuatro días después. La tripulación estaba compuesta por los astronautas Neil Armstrong, Buzz Aldrin y Michael Collins. Los astronautas recogieron muestras de roca y suelo lunar y llevaron a cabo varios experimentos científicos.</p>
+            </div>
+            <div class="section3__container section3__containervisible section3__containervisible2">
+                <h3 class="section3__containervisible-h3">Apolo 12</h3>
+            </div>
+            <i class="fa-solid fa-chevron-right section3__icon section3__icon-flechaderecha2"></i>
+            <div class="section3__container section3__containernovisible section3__containernovisible2">
+                <p class="section3__containernovisible-p">La Misión Apolo 12 fue la segunda misión tripulada del programa Apolo, lanzada al espacio el 14 de noviembre de 1969. La misión Apolo 12 tuvo como objetivo llevar a cabo misiones de exploración más ambiciosas y complejas en la superficie lunar, así como también recoger muestras de roca y suelo lunar para su estudio. La tripulación logró aterrizar con precisión en un lugar cercano a un objeto de impacto lunar llamado "Oceanus Procellarum".</p>
+            </div>
+            <div class="section3__container section3__containervisible section3__containervisible3">
+                <h3 class="section3__containervisible-h3">Programa Artemis</h3>
+            </div>
+            <i class="fa-solid fa-chevron-right section3__icon section3__icon-flechaderecha3"></i>
+            <div class="section3__container section4__containernovisible section3__containernovisible3">
+                <p class="section3__containernovisible-p">Entrará en funcionamiento en 2024 y su objetivo principal es llevar a cabo misiones tripuladas y no tripuladas a la Luna. Se compone de varias misiones, incluidas misiones de vuelo en órbita lunar, aterrizajes tripulados en la superficie lunar, etc. También incluye la construcción de una base lunar y la creación de un sistema de transporte para viajar entre la <a href="tierra.html">Tierra</a> y la Luna. La idea es que un futuro sirva como "puente" para futuros viajes a <a href="marte.html">Marte</a>.</p>
+            </div>
+        </section>
+
+        <hr style="width: 90%;">
+
+        <section class="section4">
+            <h2 class="section4__h2">Formación de la Luna</h2>
+            <div class="section4__container">
+                <img src="imgs/lunaimgs/imgsection4.png" alt="" class="section4__container-img"> 
+                <p>La formación de la Luna sigue siendo un misterio para los científicos. A lo largo de los años, se han propuesto varias teorías para explicar su origen, pero ninguna de ellas ha sido completamente aceptada como la explicación definitiva.</p>
+                <h4>Teoría del planeta roto:</h4>
+                <p>Una de las teorías más antiguas y conocidas es la teoría del planeta roto. Según esta teoría, la Luna se formó a partir de una porción de la <a href="tierra.html">Tierra</a> que se separó debido a un impacto con otro cuerpo celeste hace aproximadamente 4,5 mil millones de años.</p>
+                <h4>Teoría de la captura:</h4>
+                <p>Otra teoría es la teoría de la captura. Según esta teoría, la Luna fue capturada por la gravedad terrestre después de haber estado en órbita alrededor de otro planeta o de un objeto celeste.</p>
+                <h4>Teoría de la co-formación:</h4>
+                <p>La teoría de la co-formación también ha sido propuesta. Según esta teoría, la Luna y la <a href="tierra.html">Tierra</a> se formaron juntas a partir del mismo material en el sistema solar primitivo.</p>
+                <h4>Teoría de formación por impacto</h4>
+                <p>Finalmente, la teoría de la formación por impacto es una de las teorías más recientes y aceptadas. Según esta teoría, la Luna se formó después de un impacto colosal entre la <a href="tierra.html">Tierra</a> y otro cuerpo celeste, hace aproximadamente 4,5 mil millones de años.</p>
+                <br>
+                <p>A pesar de los avances en la comprensión de la formación de la Luna, todavía hay mucho por descubrir. Los científicos están esperando futuras misiones a la Luna para recopilar más datos y comprender mejor su origen.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__img" src="imgs/logo.png" alt="">
+    </footer>
+
+    <script src="header.js"></script>
+    <script src="luna.js"></script>
+</body>
+</html>

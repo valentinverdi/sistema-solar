@@ -1,0 +1,961 @@
+* {
+    color: #fff;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------SECTION1-------------------------- */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(imgs/cometasyasteroidesimgs/imgSection1.png);
+    background-size: cover;
+    height: 25vw;
+}
+
+.section1__h1 {
+    margin: 0 15vw;
+    padding: 0;
+    font-size: 60px;
+}
+
+@media screen and (max-width:1000px) {
+    .section1 {
+        height: 30vw;
+    }
+
+    .section1__h1 {
+        margin: 0 auto;
+        padding: 0;
+        font-size: 30px;
+    }
+}
+
+/* --------------------------------------SECTION 2------------------------------------- */
+
+.section2 {
+    margin: 70px auto;
+    overflow: hidden;
+    max-width: 1400px;
+}
+
+.section2__h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section2__container p{
+    font-size: 25px;
+    text-indent: 20px;
+    margin: 0;
+}
+
+.section2__container h4{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.section2__container-img {
+    float: right;
+    width: 450px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+    .section2 {
+        margin: 70px;
+    } 
+}
+
+@media screen and (max-width: 1000px) {
+    .section2 {
+        margin: 70px 25px;
+    }
+    
+    .section2__h2 {
+        font-size: 30px;
+    }
+    
+    .section2__container p{
+        font-size: 22px;
+    }
+
+    .section2__container-img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section2__container {
+        font-size: 20px;
+    }
+
+    .section2__container h4{
+        font-size: 25px;
+    }
+
+    .section2__container p{
+        font-size: 22px;
+    }
+
+    .section2__container-img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .section2__h2 {
+        font-size: 25px;
+    }
+    
+    .section2__container-img {
+        float:none;
+        width: 80vw;
+    }
+}
+
+/* ---------------------------SECTION 3-------------------------------- */
+
+.section3 {
+    margin: 70px auto;
+    overflow: hidden;
+    max-width: 1400px;
+}
+
+.section3__h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section3__container p{
+    font-size: 25px;
+    text-indent: 20px;
+    margin: 0;
+}
+
+.section3__container h4{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.section3__container-img {
+    float: right;
+    width: 450px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+    .section3 {
+        margin: 70px;
+    } 
+}
+
+@media screen and (max-width: 1000px) {
+    .section3 {
+        margin: 70px 25px;
+    }
+    
+    .section3__h2 {
+        font-size: 30px;
+    }
+    
+    .section3__container p{
+        font-size: 22px;
+    }
+
+    .section3__container-img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section3__h2 {
+        font-size: 25px;
+    }
+    
+    .section3__container p{
+        font-size: 20px;
+    }
+
+    .section3__container h4{
+        font-size: 25px;
+    }
+
+    .section3__container-img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .section3__container-img {
+        float:none;
+        width: 80vw;
+    }
+}
+
+/* --------------------section4--------------------- */
+
+.section4 {
+    position: relative;
+    width: 100%;
+    height: 65vw;
+    margin: 70px 0;
+}
+
+.section4__h2 {
+    font-size: 35px;
+    position: absolute;
+    top: 0vw;
+    left: 8vw;
+}
+
+.section4__container {
+    position: absolute;
+    width: 30vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.section4__icon {
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    background-color: #aaa;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.section4__icon:hover {
+    background-color: #777;
+}
+
+.section4__containervisible-h3 {
+    max-width: 25vw;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section4__containernovisible-p {
+    font-size: 20px;
+}
+
+.section4__containervisible1 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imgs/cometasyasteroidesimgs/img1section4.png);
+    background-size: cover;
+    left: 8vw;
+    top: 10vw;
+    z-index: 2;
+    border: 2px solid #777;
+}
+
+.section4__icon-flechaderecha1 {
+    left: 36vw;
+    top: 15.5vw;
+}
+
+.section4__containernovisible1 {
+    left: 8vw;
+    top: 10vw;
+    z-index: 1;
+}
+
+.section4__containervisible2 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imgs/cometasyasteroidesimgs/img2section4.png);
+    background-size: cover;
+    left: 8vw;
+    top: 30vw;
+    z-index: 2;
+    border: 2px solid #777;
+}
+
+.section4__icon-flechaderecha2 {
+    left: 36vw;
+    top: 35.5vw;
+}
+
+.section4__containernovisible2 {
+    left: 8vw;
+    top: 30vw;
+    z-index: 1;
+}
+
+.section4__containervisible3 {
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(imgs/cometasyasteroidesimgs/img3section4.png);
+    background-size: cover;
+    left: 8vw;
+    top: 50vw;
+    z-index: 2;
+    border: 2px solid #777;
+}
+
+.section4__icon-flechaderecha3 {
+    left: 36vw;
+    top: 55.5vw;
+}
+
+.section4__containernovisible3 {
+    left: 8vw;
+    top: 50vw;
+    z-index: 1;
+}
+
+@keyframes moverDivALaDerecha {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(140%);
+    }
+}
+
+@keyframes volverDivDeLaDerecha {
+    from {
+        transform: translateX(140%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moverBotonALaDerecha {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes volverBotonDeLaDerecha {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .section4__containervisible-h3 {
+        font-size: 25px;
+    }
+    
+    .section4__containernovisible-p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section4__containervisible-h3 {
+        font-size: 22px;
+    }
+    
+    .section4__containernovisible-p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section4__containervisible-h3 {
+        font-size: 20px;
+    }
+    
+    .section4__containernovisible-p {
+        font-size: 11px;
+    }
+
+    .section4__icon {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section4 {
+        width: 95%;
+        margin: 70px auto;
+        height: 265vw;
+        overflow-x: hidden;
+    }
+
+    .section4__h2 {
+        font-size: 35px;
+        text-align: center;
+        top: 0vw;
+        left: 0;
+        right: 0;
+    }
+    
+    .section4__container {
+        width: 60vw;
+        height: 70vw;
+    }
+
+    .section4__icon {
+        font-size: 20px;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .section4__containervisible-h3 {
+        font-size: 22px;
+        max-width: 50vw;
+    }
+    
+    .section4__containernovisible-p {
+        font-size: 27px;
+    }
+
+    .section4__containervisible1 {
+        left: 20vw;
+        top: 30vw;
+        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(imgs/cometasyasteroidesimgs/img1section4.png);
+        background-size: cover;
+    }
+
+    .section4__icon-flechaderecha1 {
+        left: 77.5vw;
+        top: 62vw;
+    }
+
+    .section4__containernovisible1 {
+        left: 20vw;
+        top: 30vw;
+        overflow: hidden;
+    }
+
+    .section4__containervisible2 {
+        left: 20vw;
+        top: 110vw;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imgs/cometasyasteroidesimgs/img2section4.png);
+        background-size: cover;
+    }
+
+    .section4__icon-flechaderecha2 {
+        left: 77.5vw;
+        top: 142vw;
+    }
+
+    .section4__containernovisible2 {
+        left: 20vw;
+        top: 110vw;
+        overflow: hidden;
+    }
+
+    .section4__containervisible3 {
+        left: 20vw;
+        top: 190vw;
+        background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url(imgs/cometasyasteroidesimgs/img4section4.png);
+        background-size: cover;
+    }
+
+    .section4__icon-flechaderecha3 {
+        left: 77.5vw;
+        top: 222vw;
+    }
+
+    .section4__containernovisible3 {
+        left: 20vw;
+        top: 190vw;
+        overflow: hidden;
+    }
+
+    @keyframes aparecerTextoR {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes desaparecerTextoR {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes moverDivALaIzquierdaR {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-133.33333333333333%);
+        }
+    }
+    @keyframes volverDivDeLaIzquierdaR {
+        from {
+            transform: translateX(-133.33333333333333%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes moverBotonALaIzquierdaR {
+        from {
+            left: 77.5vw;
+        }
+        to {
+            left: 0vw;
+        }
+    }
+    @keyframes volverBotonDeLaIzquierdaR {
+        from {
+            left: 0vw;
+        }
+        to {
+            left: 77.5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section4__h2 {
+        font-size: 30px;
+    }
+
+    .section4__containervisible-h3 {
+        font-size: 18px;
+    }
+    
+    .section4__containernovisible-p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section4__h2 {
+        font-size: 25px;
+    }
+    
+    .section4__containervisible-h3 {
+        font-size: 16px;
+    }
+    
+    .section4__containernovisible-p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section4__h2 {
+        font-size: 17px;
+    }
+    
+    .section4__containervisible-h3 {
+        font-size: 15px;
+    }
+    
+    .section4__containernovisible-p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .section4__containervisible-h3 {
+        font-size: 13px;
+    }
+    
+    .section4__containernovisible-p {
+        font-size: 8px;
+    }
+}
+
+
+/* --------------------section5--------------------- */
+
+.section5 {
+    position: relative;
+    width: 100%;
+    height: 65vw;
+    margin: 70px 0;
+}
+
+.section5__h2 {
+    font-size: 35px;
+    position: absolute;
+    top: 0vw;
+    left: 8vw;
+}
+
+.section5__container {
+    position: absolute;
+    width: 30vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.section5__icon {
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    background-color: #aaa;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.section5__icon:hover {
+    background-color: #777;
+}
+
+.section5__containervisible-h3 {
+    max-width: 25vw;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section5__containernovisible-p {
+    font-size: 20px;
+}
+
+.section5__containervisible1 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imgs/cometasyasteroidesimgs/img4section5.png);
+    background-size: cover;
+    left: 8vw;
+    top: 10vw;
+    z-index: 2;
+    border: 2px solid #777;
+}
+
+.section5__icon-flechaderecha1 {
+    left: 36vw;
+    top: 15.5vw;
+}
+
+.section5__containernovisible1 {
+    left: 8vw;
+    top: 10vw;
+    z-index: 1;
+}
+
+.section5__containervisible2 {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imgs/cometasyasteroidesimgs/img5section5.png);
+    background-size: cover;
+    left: 8vw;
+    top: 30vw;
+    z-index: 2;
+    border: 2px solid #777;
+}
+
+.section5__icon-flechaderecha2 {
+    left: 36vw;
+    top: 35.5vw;
+}
+
+.section5__containernovisible2 {
+    left: 8vw;
+    top: 30vw;
+    z-index: 1;
+}
+
+.section5__containervisible3 {
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(imgs/cometasyasteroidesimgs/img6section5.png);
+    background-size: cover;
+    left: 8vw;
+    top: 50vw;
+    z-index: 2;
+    border: 2px solid #777;
+}
+
+.section5__icon-flechaderecha3 {
+    left: 36vw;
+    top: 55.5vw;
+}
+
+.section5__containernovisible3 {
+    left: 8vw;
+    top: 50vw;
+    z-index: 1;
+}
+
+@keyframes moverDivALaDerecha {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(140%);
+    }
+}
+
+@keyframes volverDivDeLaDerecha {
+    from {
+        transform: translateX(140%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moverBotonALaDerecha {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes volverBotonDeLaDerecha {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .section5__containervisible-h3 {
+        font-size: 25px;
+    }
+    
+    .section5__containernovisible-p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section5__containervisible-h3 {
+        font-size: 22px;
+    }
+    
+    .section5__containernovisible-p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section5__containervisible-h3 {
+        font-size: 20px;
+    }
+    
+    .section5__containernovisible-p {
+        font-size: 11px;
+    }
+
+    .section5__icon {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section5 {
+        width: 95%;
+        margin: 70px auto;
+        height: 265vw;
+        overflow-x: hidden;
+    }
+
+    .section5__h2 {
+        font-size: 35px;
+        text-align: center;
+        top: 0vw;
+        left: 0;
+        right: 0;
+    }
+    
+    .section5__container {
+        width: 60vw;
+        height: 70vw;
+    }
+
+    .section5__icon {
+        font-size: 20px;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .section5__containervisible-h3 {
+        font-size: 22px;
+        max-width: 50vw;
+    }
+    
+    .section5__containernovisible-p {
+        font-size: 27px;
+    }
+
+    .section5__containervisible1 {
+        left: 20vw;
+        top: 30vw;
+        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(imgs/cometasyasteroidesimgs/img1section5.png);
+        background-size: cover;
+    }
+
+    .section5__icon-flechaderecha1 {
+        left: 77.5vw;
+        top: 62vw;
+    }
+
+    .section5__containernovisible1 {
+        left: 20vw;
+        top: 30vw;
+        overflow: hidden;
+    }
+
+    .section5__containervisible2 {
+        left: 20vw;
+        top: 110vw;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(imgs/cometasyasteroidesimgs/img2section5.png);
+        background-size: cover;
+    }
+
+    .section5__icon-flechaderecha2 {
+        left: 77.5vw;
+        top: 142vw;
+    }
+
+    .section5__containernovisible2 {
+        left: 20vw;
+        top: 110vw;
+        overflow: hidden;
+    }
+
+    .section5__containervisible3 {
+        left: 20vw;
+        top: 190vw;
+        background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url(imgs/cometasyasteroidesimgs/img3section5.png);
+        background-size: cover;
+    }
+
+    .section5__icon-flechaderecha3 {
+        left: 77.5vw;
+        top: 222vw;
+    }
+
+    .section5__containernovisible3 {
+        left: 20vw;
+        top: 190vw;
+        overflow: hidden;
+    }
+
+    @keyframes aparecerTextoR {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    @keyframes desaparecerTextoR {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @keyframes moverDivALaIzquierdaR {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-133.33333333333333%);
+        }
+    }
+    @keyframes volverDivDeLaIzquierdaR {
+        from {
+            transform: translateX(-133.33333333333333%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes moverBotonALaIzquierdaR {
+        from {
+            left: 77.5vw;
+        }
+        to {
+            left: 0vw;
+        }
+    }
+    @keyframes volverBotonDeLaIzquierdaR {
+        from {
+            left: 0vw;
+        }
+        to {
+            left: 77.5vw;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .section5__h2 {
+        font-size: 30px;
+    }
+
+    .section5__containervisible-h3 {
+        font-size: 18px;
+    }
+    
+    .section5__containernovisible-p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section5__h2 {
+        font-size: 25px;
+    }
+    
+    .section5__containervisible-h3 {
+        font-size: 16px;
+    }
+    
+    .section5__containernovisible-p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section5__h2 {
+        font-size: 17px;
+    }
+    
+    .section5__containervisible-h3 {
+        font-size: 15px;
+    }
+    
+    .section5__containernovisible-p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .section5__containervisible-h3 {
+        font-size: 13px;
+    }
+    
+    .section5__containernovisible-p {
+        font-size: 8px;
+    }
+}

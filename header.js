@@ -13,6 +13,7 @@ const liPlanetasNoVisible = document.querySelector(".header__navnovisible-ul-li-
 const liMasNoVisible = document.querySelector(".header__navnovisible-ul-li-mas");
 const iconFlechaAbajoNoVisible1 = document.querySelector(".icon-flecha-abajo-novisible-1");
 const iconFlechaAbajoNoVisible2 = document.querySelector(".icon-flecha-abajo-novisible-2");
+const main = document.querySelector("main");
 
 
 listaVisibleEscondida1.style.display = "none";
@@ -44,37 +45,25 @@ liMasVisible.addEventListener("click",()=>{
     } 
 })
 
+navNoVisible.style.display = "none";
+
 iconList.addEventListener("click",()=>{
+    navNoVisible.style.display = "block";
     navNoVisible.style.animation = "abrirNav 0.8s forwards";
     iconList.style.animation = "cerrarNav 0.4s forwards";
 })
 iconFlechaIzq.addEventListener("click",()=>{
     navNoVisible.style.animation = "cerrarNav 0.8s forwards";
-    iconList.style.animation = "abrirNav 0.4s forwards"
+    setTimeout(()=>navNoVisible.style.display = "none", 800);
+    iconList.style.animation = "abrirNav 0.4s forwards";
 })
 
-liPlanetasNoVisible.addEventListener("click",()=>{
-    if (listaNoVisibleEscondida1.style.display == "none") {
-        listaNoVisibleEscondida1.style.display = "block";
-        listaNoVisibleEscondida1.style.animation = "aparecerUl1 0.5s forwards";
-        iconFlechaAbajoNoVisible1.style.animation = "rotarIcono1 0.5s forwards";
-    } else if (listaNoVisibleEscondida1.style.display == "block"){
-       setTimeout(()=> listaNoVisibleEscondida1.style.display = "none", 200) 
-        listaNoVisibleEscondida1.style.animation = "desaparecerUl1 0.25s forwards";
-        iconFlechaAbajoNoVisible1.style.animation = "rotarIcono2 0.5s forwards";
-    } 
-})
-
-liMasNoVisible.addEventListener("click",()=>{
-    if (listaNoVisibleEscondida2.style.display == "none") {
-        listaNoVisibleEscondida2.style.display = "block";
-        listaNoVisibleEscondida2.style.animation = "aparecerUl2 0.5s forwards";
-        iconFlechaAbajoNoVisible2.style.animation = "rotarIcono1 0.5s forwards";
-    } else if (listaNoVisibleEscondida2.style.display == "block"){
-        setTimeout(()=>listaNoVisibleEscondida2.style.display = "none",200);
-        listaNoVisibleEscondida2.style.animation = "desaparecerUl2 0.25s forwards";
-        iconFlechaAbajoNoVisible2.style.animation = "rotarIcono2 0.5s forwards";
-    } 
+main.addEventListener("click",()=>{
+    if (navNoVisible.style.display == "block") {
+        navNoVisible.style.animation = "cerrarNav 0.8s forwards";
+        setTimeout(()=>navNoVisible.style.display = "none", 800);
+        iconList.style.animation = "abrirNav 0.4s forwards";
+    }   
 })
 
 let xIni, yIni, xMv, yMv;
@@ -105,3 +94,27 @@ addEventListener("touchend",(e)=>{
         xMv = null;
     }        
 }) 
+
+liPlanetasNoVisible.addEventListener("click",()=>{
+    if (listaNoVisibleEscondida1.style.display == "none") {
+        listaNoVisibleEscondida1.style.display = "block";
+        listaNoVisibleEscondida1.style.animation = "aparecerUl1 0.5s forwards";
+        iconFlechaAbajoNoVisible1.style.animation = "rotarIcono1 0.5s forwards";
+    } else if (listaNoVisibleEscondida1.style.display == "block"){
+       setTimeout(()=> listaNoVisibleEscondida1.style.display = "none", 200) 
+        listaNoVisibleEscondida1.style.animation = "desaparecerUl1 0.25s forwards";
+        iconFlechaAbajoNoVisible1.style.animation = "rotarIcono2 0.5s forwards";
+    } 
+})
+
+liMasNoVisible.addEventListener("click",()=>{
+    if (listaNoVisibleEscondida2.style.display == "none") {
+        listaNoVisibleEscondida2.style.display = "block";
+        listaNoVisibleEscondida2.style.animation = "aparecerUl2 0.5s forwards";
+        iconFlechaAbajoNoVisible2.style.animation = "rotarIcono1 0.5s forwards";
+    } else if (listaNoVisibleEscondida2.style.display == "block"){
+        setTimeout(()=>listaNoVisibleEscondida2.style.display = "none",200);
+        listaNoVisibleEscondida2.style.animation = "desaparecerUl2 0.25s forwards";
+        iconFlechaAbajoNoVisible2.style.animation = "rotarIcono2 0.5s forwards";
+    } 
+})

@@ -1,0 +1,819 @@
+* {
+    color: #fff;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------SECTION1-------------------------- */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(imgs/planetasenanosimgs/imgSection1.png);
+    background-size: cover;
+    height: 25vw;
+}
+
+.section1__h1 {
+    margin: 0 15vw;
+    padding: 0;
+    font-size: 60px;
+}
+
+@media screen and (max-width:1000px) {
+    .section1 {
+        height: 30vw;
+    }
+
+    .section1__h1 {
+        margin: 0 auto;
+        padding: 0;
+        font-size: 30px;
+    }
+}
+
+/* ---------------------------------SECTION2------------------------------------- */
+
+.section2 {
+    width: 90%;
+    height: fit-content;
+    margin: 50px auto;
+
+}
+
+.section2__containernovisible {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: height 1s;
+}
+
+.section2__containernovisible div {
+    float: right;
+    margin: 20px;
+    width: 450px;
+    height: 450px;
+}
+
+.section2__containernovisible-img {
+    width: 100%
+}
+
+.section2__containernovisible h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section2__containernovisible p {
+    font-size: 25px;
+    text-indent: 20px;
+    margin: 10px 30px;
+}
+
+.section2__containervisible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    font-size: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.section2__containervisible h3 {
+    margin: 0;
+    margin-top: 10px;
+    color: #000;
+}
+
+.section2__containervisible hr {
+    margin: 3px;
+    color: #000;
+    width: 90%;
+}
+
+.section2__containervisible-btn {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    transition: background-color 0.3s;
+}
+
+.section2__containervisible-btn-icon {
+    color: #000;
+}
+
+.section2__containervisible-btn:hover {
+    background-color: #999;
+}
+
+@keyframes rotarBtn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes desrotarBtn {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section2__containernovisible div {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section2__containernovisible h2 {
+        font-size: 30px;
+    }
+    
+    .section2__containernovisible p {
+        font-size: 20px;
+    }
+
+    .section2__containervisible {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .section2__containernovisible div {
+        width: 300px;
+        height: 300px;
+        margin: 0px calc(45vw - 150px);
+        float: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section2__containernovisible div {
+        width: 200px;
+        height: 200px;
+        margin: 0px calc(45vw - 100px);
+        
+    }
+    
+    .section2__containernovisible h2 {
+        font-size: 27px;
+    }
+    
+    .section2__containernovisible p {
+        font-size: 18px;
+    }
+
+    .section2__containervisible {
+        font-size: 16px;
+    }
+}
+
+/* ---------------------------------section3------------------------------------- */
+
+.section3 {
+    width: 90%;
+    height: fit-content;
+    margin: 50px auto;
+
+}
+
+.section3__containernovisible {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: height 1s;
+}
+
+.section3__containernovisible div {
+    float: right;
+    margin: 20px;
+    width: 450px;
+    height: 423.52px;
+}
+
+.section3__containernovisible-img {
+    width: 100%
+}
+
+.section3__containernovisible h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section3__containernovisible p {
+    font-size: 25px;
+    text-indent: 20px;
+    margin: 10px 30px;
+}
+
+.section3__containervisible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    font-size: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.section3__containervisible h3 {
+    margin: 0;
+    margin-top: 10px;
+    color: #000;
+}
+
+.section3__containervisible hr {
+    margin: 3px;
+    color: #000;
+    width: 90%;
+}
+
+.section3__containervisible-btn {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    transition: background-color 0.3s;
+}
+
+.section3__containervisible-btn-icon {
+    color: #000;
+}
+
+.section3__containervisible-btn:hover {
+    background-color: #999;
+}
+
+@keyframes rotarBtn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes desrotarBtn {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section3__containernovisible div {
+        width: 300px;
+        height: 282.34px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section3__containernovisible h2 {
+        font-size: 30px;
+    }
+    
+    .section3__containernovisible p {
+        font-size: 20px;
+    }
+
+    .section3__containervisible {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .section3__containernovisible div {
+        width: 300px;
+        height: 282.34px;
+        margin: 0px calc(45vw - 150px);
+        float: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section3__containernovisible div {
+        width: 200px;
+        height: 188.23px;
+        margin: 0px calc(45vw - 100px);
+        
+    }
+    
+    .section3__containernovisible h2 {
+        font-size: 27px;
+    }
+    
+    .section3__containernovisible p {
+        font-size: 18px;
+    }
+
+    .section3__containervisible {
+        font-size: 16px;
+    }
+}
+
+
+/* ---------------------------------section4------------------------------------- */
+
+.section4 {
+    width: 90%;
+    height: fit-content;
+    margin: 50px auto;
+
+}
+
+.section4__containernovisible {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: height 1s;
+}
+
+.section4__containernovisible div {
+    float: right;
+    margin: 20px;
+    width: 450px;
+    height: 450px;
+}
+
+.section4__containernovisible-img {
+    width: 100%
+}
+
+.section4__containernovisible h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section4__containernovisible p {
+    font-size: 25px;
+    text-indent: 20px;
+    margin: 10px 30px;
+}
+
+.section4__containervisible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    font-size: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.section4__containervisible h3 {
+    margin: 0;
+    margin-top: 10px;
+    color: #000;
+}
+
+.section4__containervisible hr {
+    margin: 3px;
+    color: #000;
+    width: 90%;
+}
+
+.section4__containervisible-btn {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    transition: background-color 0.3s;
+}
+
+.section4__containervisible-btn-icon {
+    color: #000;
+}
+
+.section4__containervisible-btn:hover {
+    background-color: #999;
+}
+
+@keyframes rotarBtn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes desrotarBtn {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section4__containernovisible div {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section4__containernovisible h2 {
+        font-size: 30px;
+    }
+    
+    .section4__containernovisible p {
+        font-size: 20px;
+    }
+
+    .section4__containervisible {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .section4__containernovisible div {
+        width: 300px;
+        height: 300px;
+        margin: 0px calc(45vw - 150px);
+        float: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section4__containernovisible div {
+        width: 200px;
+        height: 200px;
+        margin: 0px calc(45vw - 100px);
+        
+    }
+    
+    .section4__containernovisible h2 {
+        font-size: 27px;
+    }
+    
+    .section4__containernovisible p {
+        font-size: 18px;
+    }
+
+    .section4__containervisible {
+        font-size: 16px;
+    }
+}
+
+
+/* ---------------------------------section5------------------------------------- */
+
+.section5 {
+    width: 90%;
+    height: fit-content;
+    margin: 50px auto;
+
+}
+
+.section5__containernovisible {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: height 1s;
+}
+
+.section5__containernovisible div {
+    float: right;
+    margin: 20px;
+    width: 450px;
+    height: 387.13px;
+}
+
+.section5__containernovisible-img {
+    width: 100%
+}
+
+.section5__containernovisible h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section5__containernovisible p {
+    font-size: 25px;
+    text-indent: 20px;
+    margin: 10px 30px;
+}
+
+.section5__containervisible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    font-size: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.section5__containervisible h3 {
+    margin: 0;
+    margin-top: 10px;
+    color: #000;
+}
+
+.section5__containervisible hr {
+    margin: 3px;
+    color: #000;
+    width: 90%;
+}
+
+.section5__containervisible-btn {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    transition: background-color 0.3s;
+}
+
+.section5__containervisible-btn-icon {
+    color: #000;
+}
+
+.section5__containervisible-btn:hover {
+    background-color: #999;
+}
+
+@keyframes rotarBtn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes desrotarBtn {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section5__containernovisible div {
+        width: 300px;
+        height: 258.08px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section5__containernovisible h2 {
+        font-size: 30px;
+    }
+    
+    .section5__containernovisible p {
+        font-size: 20px;
+    }
+
+    .section5__containervisible {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .section5__containernovisible div {
+        width: 300px;
+        height: 258.08px;
+        margin: 0px calc(45vw - 150px);
+        float: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section5__containernovisible-img {
+        width: 200px;
+        height: 172.05px;
+        margin: 0px calc(45vw - 100px);
+        
+    }
+    
+    .section5__containernovisible h2 {
+        font-size: 27px;
+    }
+    
+    .section5__containernovisible p {
+        font-size: 18px;
+    }
+
+    .section5__containervisible {
+        font-size: 16px;
+    }
+}
+
+
+/* ---------------------------------section6------------------------------------- */
+
+.section6 {
+    width: 90%;
+    height: fit-content;
+    margin: 50px auto;
+
+}
+
+.section6__containernovisible {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: height 1s;
+}
+
+.section6__containernovisible div {
+    float: right;
+    margin: 20px;
+    width: 450px;
+    height: 450px;
+}
+
+.section6__containernovisible-img {
+    width: 100%
+}
+
+.section6__containernovisible h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.section6__containernovisible p {
+    font-size: 25px;
+    text-indent: 20px;
+    margin: 10px 30px;
+}
+
+.section6__containervisible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    font-size: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.section6__containervisible h3 {
+    margin: 0;
+    margin-top: 10px;
+    color: #000;
+}
+
+.section6__containervisible hr {
+    margin: 3px;
+    color: #000;
+    width: 90%;
+}
+
+.section6__containervisible-btn {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    background-color: inherit;
+    transition: background-color 0.3s;
+}
+
+.section6__containervisible-btn-icon {
+    color: #000;
+}
+
+.section6__containervisible-btn:hover {
+    background-color: #999;
+}
+
+@keyframes rotarBtn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes desrotarBtn {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section6__containernovisible div {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section6__containernovisible h2 {
+        font-size: 30px;
+    }
+    
+    .section6__containernovisible p {
+        font-size: 20px;
+    }
+
+    .section6__containervisible {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .section6__containernovisible div {
+        width: 300px;
+        height: 300px;
+        margin: 0px calc(45vw - 150px);
+        float: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section6__containernovisible div {
+        width: 200px;
+        height: 200px;
+        margin: 0px calc(45vw - 100px);
+        
+    }
+    
+    .section6__containernovisible h2 {
+        font-size: 27px;
+    }
+    
+    .section6__containernovisible p {
+        font-size: 18px;
+    }
+
+    .section6__containervisible {
+        font-size: 16px;
+    }
+}

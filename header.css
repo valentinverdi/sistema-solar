@@ -83,10 +83,8 @@ body {
     padding: 10px;
     margin: 3px;
 }
-.header__navvisible-ul-li:nth-child(3):hover {
-    background: #00000000;
-    padding: 0px;
-    margin: 13px;
+.header__navvisible-ul-li:nth-child(1):hover {
+    background: #000;
 }
 
 .header__navvisible-ul-li-ul-li:hover {
