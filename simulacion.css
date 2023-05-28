@@ -1,0 +1,178 @@
+
+.containersim img {
+    position: absolute;
+}
+.containersim {
+    width: 500px;
+    height: 500px;
+    /* overflow: hidden; */
+    /* border: 1px solid red; */
+    position: relative;
+    padding: 50px;
+    margin: 50px auto;
+}
+
+.configsim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    transform-origin: bottom right;
+    animation: orbitar linear infinite forwards;
+    animation-delay: 0.1s;
+    /* border:1px solid blue; */
+}
+
+.tlsim {
+    transform: rotate(0deg);
+    animation-duration: 10s;
+}
+#tierrasim {
+    width: 15px;
+    top: calc(76% - 7.5px);
+    left: calc(76% - 7.5px);
+    /* animation: orbitar 0.16s linear 0s infinite; */
+}
+
+.lsim {
+    position: relative;
+    width: 228px;
+    height: 228px;
+    /* border: 1px solid green; */
+    transform: rotate(0deg);
+    transform-origin: bottom right;
+    animation: orbitar 0.8s linear 0s infinite;
+}
+#lunasim {
+    height: 10px;
+    top: calc(95% - 5px);
+    left: calc(95% - 7.6px);
+    
+}
+
+
+#solsim {
+    width: 50px;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    animation: orbitar 0.8s linear 0s infinite;
+}
+
+
+.mersim {
+    transform: rotate(30deg);
+    animation-duration: 2.4s;
+}
+#mercuriosim {
+    width: 10px;
+    top: calc(90% - 5px);
+    left: calc(90% - 5px);
+}
+
+.venussim {
+    transform: rotate(160deg);
+    animation-duration: 6.2s;
+}
+#venussim {
+    width: 15px;
+    top: calc(83% - 7.5px);
+    left: calc(83% - 7.5px);
+}
+
+.martesim {
+    transform: rotate(270deg);
+    animation-duration: 18.6s;
+}
+#martesim {
+    width: 10.5px;
+    top: calc(69% - 5.75px);
+    left: calc(69% - 5.75px);
+}
+
+.cinturonsim{
+    position: absolute;
+    width: 345px;
+    height: 345px;
+    top: calc(50% - 172.5px);
+    left: calc(50% - 172.5px);
+    animation: orbitar 45s linear 0s infinite;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+#cinturondeasteroidessimm {
+    position: relative;
+    width: 345px;
+}
+
+.jupitersim {
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: 0;
+    transform: rotate(0deg);
+    transform-origin: left top;
+    animation-duration: 120s;
+}
+#jupitersim {
+    width: 27.5px;
+    top: calc(42% - 13.75px);
+    left: calc(42% - 13.75px);
+}
+
+.saturnosim {
+    transform: rotate(110deg);
+    animation-duration: 200s;
+}
+#saturnosim {
+    width: 35px;
+    top: calc(47% - 17.5px);
+    left: calc(47% - 17.5px);
+}
+
+.uranosim {
+    top: 0;
+    left: unset;
+    bottom: unset;
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    animation-duration: 700s;
+}
+#uranosim {
+    width: 17.5px;
+    top: calc(36% - 8.75px);
+    right: calc(36% - 8.75px);
+}
+
+.neptunosim {
+    top: unset;
+    left: 0;
+    bottom: 0;
+    right: unset;
+    transform: rotate(300deg);
+    transform-origin: right top;
+    animation-duration: 1400s;
+}
+#neptunosim {
+    width: 17.5px;
+    bottom: calc(25% - 8.75px);
+    left: calc(25% - 8.75px);
+}
+
+@keyframes orbitar {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .containersim{
+        display: none;
+        animation: none;
+    }
+}
