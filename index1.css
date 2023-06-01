@@ -87,7 +87,7 @@
 .section2__grid-container-tarjetasvisibles-3 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    background-image: url(imgs/index1Imgs/fondoTarjeta3.png);
+    background-image: url(imgs/index1Imgs/fondotarjeta3.png);
 }
 
 .section2__grid-container-tarjetasvisibles-4 {
@@ -167,7 +167,7 @@
 .section2__grid-container-tarjetasnovisibles-3 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(imgs/index1Imgs/fondoTarjeta3.png);
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(imgs/index1Imgs/fondotarjeta3.png);
     transform: rotatey(-90deg);
     
 }
